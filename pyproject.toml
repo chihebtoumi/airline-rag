@@ -1,0 +1,26 @@
+[project]
+name = "airline-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "chihebtoumi", email = "chihebeddine.toumi01@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.10",
+    "langchain-groq>=1.1.3",
+    "pydantic>=2.14.3",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+airline-rag = "airline_rag:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
